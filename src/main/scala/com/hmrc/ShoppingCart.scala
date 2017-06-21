@@ -1,3 +1,4 @@
 package com.hmrc
 
-case class ShoppingCart(lineItems: Seq[LineItem])
+case class ShoppingCart(lineItems: Seq[LineItem],
+                        priceAdjustment: MonetaryAmount = MonetaryAmount.zero)
